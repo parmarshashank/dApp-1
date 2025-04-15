@@ -11,6 +11,7 @@ import {
 } from '@solana/wallet-adapter-wallets';
 import { RequestAirdrop } from './RequestAirdrop';
 import { ShowBal } from './ShowBal';
+import { SendTokens } from './SendTokens';
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
                         <WalletMultiButton />
                         <ShowBal></ShowBal>
                         <RequestAirdrop></RequestAirdrop>
+                        <SendTokens/>
                     </div>
                 </WalletModalProvider>
             </WalletProvider>
