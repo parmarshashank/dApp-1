@@ -18,14 +18,25 @@ export const ShowBal = () => {
     }, [publicKey, connection]);
 
     return (
-        <div>
-            <h1>Balance</h1>
-            <p>
+        <div style={{
+            marginTop: '30px',
+            padding: '20px',
+            border: '1px solid #ccc',
+            borderRadius: '8px',
+            display: 'inline-block',
+            textAlign: 'left'
+        }}>
+            <h2>Wallet Balance</h2>
+            <p style={{
+                fontSize: '18px',
+                color: '#333',
+                fontWeight: 'bold'
+            }}>
                 {publicKey
                     ? balance !== null
-                        ? `Balance: ${balance / LAMPORTS_PER_SOL} SOL`
+                        ? `💰 ${ (balance / LAMPORTS_PER_SOL).toFixed(4) } SOL`
                         : "Fetching..."
-                    : "Connect your wallet to see balance"}
+                    : "🔌 Connect your wallet to see balance"}
             </p>
         </div>
     );
