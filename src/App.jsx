@@ -12,6 +12,7 @@ import {
 import { RequestAirdrop } from './RequestAirdrop';
 import { ShowBal } from './ShowBal';
 import { SendTokens } from './SendTokens';
+import { SignMessage } from './SignMessage';
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
                         <ShowBal></ShowBal>
                         <RequestAirdrop></RequestAirdrop>
                         <SendTokens/>
+                        <SignMessage/>
                     </div>
                 </WalletModalProvider>
             </WalletProvider>
